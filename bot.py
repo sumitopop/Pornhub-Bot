@@ -124,7 +124,7 @@ async def start(client, message : Message):
                         "We don't intend to spread Pørno-\n"
                         "-graphy here. It's just a bot for a\n" 
                         "purpose as many of them wanted.\n" 
-                        "━━━━━━━━━━━━━━━━━━━━━\n"
+                        "━━━━━━━━━Powered By @VENOMxCRAZY SERVER\n"
                         "Click The Buttons Below To Search", reply_markup=InlineKeyboardMarkup([[btn1, btn2]]))
     
 
@@ -164,7 +164,7 @@ async def download_video(client, callback : CallbackQuery):
 
     for file in os.listdir('.'):
         if file.endswith(".mp4"):
-            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\n@SJ_Bots",
+            await callback.message.reply_video(f"{file}", caption="**Here Is your Requested Video**\n@gujiya_garam",
                                 reply_markup=InlineKeyboardMarkup([[btn1, btn2]]))
             os.remove(f"{file}")
             break
